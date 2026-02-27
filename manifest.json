@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Myrient Folder Size",
+  "version": "1.0.0",
+  "description": "Shows folder sizes on Myrient directory listings.",
+  "permissions": [],
+  "host_permissions": [
+    "*://myrient.erista.me/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://myrient.erista.me/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "96": "icon96.png"
+  }
+}
